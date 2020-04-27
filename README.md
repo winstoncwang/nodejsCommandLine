@@ -20,3 +20,23 @@ JS in Node.js                                               |
 -Each file is a separate world, variables are shared using
 exports
 -Include various libraries by using NPM(node package manager)
+
+-------------------------------------------------------------
+Node.js can be used in terminal by using node <filename> or use node REPL which can be used to run JS scripts directly.
+
+-------------------------------------------------------------
+Node.js modules system                                      |
+-------------------------------------------------------------
+using <require('filedir')> and module.exports = variables
+
+
+---
+
+initial commit
+
+     initial commit 
+---
+
+experimenting with node modules
+
+    
