@@ -91,3 +91,13 @@ V 0.141
 V 0.142
 
      using promise appoach with fs.promise and util.promisify to allow all results to be return and displayed at once.
+---
+
+V 0.15
+
+     use await+promise.all+async tools to allow all promise to resolve at once rather than one-by-one.
+---
+
+V 0.16
+
+     color texting commandline tool using chalk(npm package).
