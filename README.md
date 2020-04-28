@@ -106,3 +106,8 @@ V 0.16
 V 0.17
 
      path input other than current working directory.
+---
+
+V 0.18
+
+     fixed bug with the filename when using fs.lstat.
