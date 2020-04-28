@@ -86,3 +86,8 @@ V 0.14
 V 0.141
 
      bug fix using two different approaches
+---
+
+V 0.142
+
+     using promise appoach with fs.promise and util.promisify to allow all results to be return and displayed at once.
