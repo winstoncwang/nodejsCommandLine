@@ -1,5 +1,5 @@
 # nodejsCommandLine
-Using nodejs to create a custom command line
+Using nodejs to create a custom command line similar to the 'ls' command used in a linux terminal. 'ls' is used to print all the documents inside a folder and display them to the user.
 
 getting to know Node.js
 
@@ -58,5 +58,13 @@ experimenting with node modules
 Readme update
 
      adding more info on nodejs, debugging tools and module.exports concept
+---
 
-    
+V 0.11
+
+     use node to display the documents in current directory
+---
+
+V 0.12
+
+     structure node.js package.json for executables
