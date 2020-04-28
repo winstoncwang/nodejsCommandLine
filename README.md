@@ -101,3 +101,8 @@ V 0.15
 V 0.16
 
      color texting commandline tool using chalk(npm package).
+---
+
+V 0.17
+
+     path input other than current working directory.
