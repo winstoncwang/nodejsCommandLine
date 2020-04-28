@@ -68,3 +68,8 @@ V 0.11
 V 0.12
 
      structure node.js package.json for executables
+---
+
+V 0.13
+
+     link our commandline tool using npm link
