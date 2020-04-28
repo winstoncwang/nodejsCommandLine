@@ -19,5 +19,8 @@
 	"bugs": {
 		"url": "https://github.com/winstoncwang/nodejsCommandLine/issues"
 	},
-	"homepage": "https://github.com/winstoncwang/nodejsCommandLine#readme"
+	"homepage": "https://github.com/winstoncwang/nodejsCommandLine#readme",
+	"dependencies": {
+		"chalk": "^4.0.0"
+	}
 }

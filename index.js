@@ -22,10 +22,11 @@ fs.readdir(process.cwd(), async (err, filenames) => {
 
 	for (let stat of allStats) {
 		const index = allStats.indexOf(stat);
-		if (stat.isFile()) {
-			console.log(filenames[index], stat.isFile());
+		if (!stat.isFile()) {
+			console.log(chalk.yellow(filenames[index]));
+		} else {
+			console.log(filenames[index]);
 		}
-		console.log(filenames[index], stat.isFile());
 	}
 
 	// for (let filename of filenames) {
