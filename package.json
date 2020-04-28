@@ -1,20 +1,23 @@
 {
-  "name": "nodejsCommandLine",
-  "version": "1.0.0",
-  "description": "Using nodejs to create a custom command line similar to the 'ls' command used in a linux terminal. 'ls' is used to print all the documents inside a folder and display them to the user.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/winstoncwang/nodejsCommandLine.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/winstoncwang/nodejsCommandLine/issues"
-  },
-  "homepage": "https://github.com/winstoncwang/nodejsCommandLine#readme"
+	"name": "nodejsCommandLine",
+	"version": "1.0.0",
+	"description": "Using nodejs to create a custom command line similar to the 'ls' command used in a linux terminal. 'ls' is used to print all the documents inside a folder and display them to the user.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/winstoncwang/nodejsCommandLine.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bin": {
+		"nls": "index.js"
+	},
+	"bugs": {
+		"url": "https://github.com/winstoncwang/nodejsCommandLine/issues"
+	},
+	"homepage": "https://github.com/winstoncwang/nodejsCommandLine#readme"
 }
