@@ -4,11 +4,12 @@ const fs = require('fs');
 const util = require('util');
 const chalk = require('chalk');
 
+const targetDir = process.argv[2] || process.cwd(); //input from node with argument[2] (argv) or the current working directory
 const lstat = util.promisify(fs.lstat); //appropriate Method 1
 
 // const { lstat } = fs.promises;  //appropriate Method 2
 
-fs.readdir(process.cwd(), async (err, filenames) => {
+fs.readdir(targetDir, async (err, filenames) => {
 	//process is a global module made available already
 	if (err) {
 		throw new Error(err);
