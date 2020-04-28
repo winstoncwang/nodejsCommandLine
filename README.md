@@ -73,3 +73,16 @@ V 0.12
 V 0.13
 
      link our commandline tool using npm link
+---
+
+V 0.14
+
+     use fs.lstat to check the stats of the file and change color accordingly.
+
+     bug:
+     random order displayed everytime the function is called.
+---
+
+V 0.141
+
+     bug fix using two different approaches

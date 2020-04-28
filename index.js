@@ -9,13 +9,28 @@ fs.readdir(process.cwd(), (err, filenames) => {
 		return;
 	}
 
-	console.log('-------------------------------');
-	filenames.forEach((file) => {
-		return fs.lstat(`${process.cwd()}/${file}`, (err, stat) => {
+	const allStats = Array(filenames.length).fill(null);
+
+	filenames.forEach((filename, index) => {
+		fs.lstat(filename, (err, stat) => {
 			if (err) {
 				throw new Error(err);
 			}
-			console.log(file, stat.isFile());
+			allStats[index] = stat;
+			// if (!allStats.includes(null)) {
+			// 	allStats.forEach((stats, index) => {
+			// 		console.log(filenames[index], stats);
+			// 	});
+			// }
+			const ready = allStats.every((stats) => {
+				return stats;
+			});
+
+			if (ready) {
+				allStats.forEach((stats, index) => {
+					console.log(filenames[index], stats.isFile());
+				});
+			}
 		});
 	});
 });
