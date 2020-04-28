@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 //fs module
 
 const fs = require('fs');
@@ -13,7 +11,11 @@ fs.readdir(process.cwd(), (err, filenames) => {
 
 	console.log('-------------------------------');
 	filenames.forEach((file) => {
-		console.log(file);
+		return fs.lstat(`${process.cwd()}/${file}`, (err, stat) => {
+			if (err) {
+				throw new Error(err);
+			}
+			console.log(file, stat.isFile());
+		});
 	});
-	console.log('-------------------------------');
 });
